@@ -1,0 +1,23 @@
+<!-- app/templates/home/dashboard.html -->
+
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block body %}
+<div class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1>The Dashboard</h1>
+                    <a class="btn btn-primary" href="{{ url_for('SurveyForms.Appraisal') }}" role="button">Appraisal Form</a>
+                    <a class="btn btn-primary" href="{{ url_for('SurveyForms.Appraisal') }}" role="button">Employee Engagement Form</a>
+                    
+                    <h3>Choose one of the forms from above!</h3>
+                    <hr class="intro-divider">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
